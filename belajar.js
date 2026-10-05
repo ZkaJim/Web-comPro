@@ -16,14 +16,3 @@
 
 // let lampuLalu = "hijau";
 
-switch(lampuLalu) {
-  case "hijau" :
-    console.log("jalan")
-    break
-  case "kuning" :
-    console.log("hati-hati")
-    break
-  case "merah" :
-    console.log("berhenti")
-    break
-}
