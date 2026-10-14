@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV. JeKaTee..</title>
+    <title>document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="navbar">
-    <img src="images/Logogika.png" alt="log" style="height: 110px;">
+    <img src="images/Logogika.png" alt="log" style="height: 99px;">
 
     <span>CV. Java Karya Teknik</span>
     
-    <div class="jarakA">
+    <div class="jarakA" id="navbar">
     <a href="#">Home</a>
     <a href="#about">About</a>
     <a href="#service">Service</a>
@@ -34,7 +34,7 @@
       <p>Aman, Cepat, Terpercaya</p>
       <span>Solusi untuk pemasangan, pencucian, perbaikan AC rumah maupun tempat usaha</span>
       <div class="hero-button">
-        <a href="#service">Lihat Layanan</a>
+        <a href="#" id="lihatLayanan">Lihat Layanan</a>
         <a href="#contact">Hubungi kami</a>
       </div>
 
@@ -43,6 +43,7 @@
          <strong>5+</strong>
          <span>Tahun Pengalaman</span>
         </div>
+
 
         <div class="stat-item">
          <strong>100+</strong>
@@ -56,7 +57,7 @@
 
     <section class="about" id="about">
       <div class="about-image">
-        <img src="images/AC broooo...jpg" alt="ac" style="height: 295px;">
+        <img src="images/AC broooo...jpg" alt="AC">
       </div>
 
       <div class="about-content">
@@ -129,18 +130,22 @@
           <span>CV. Java Karya Teknik</span>
         </div>
 
-        <div class="footer-nav">
+        <!-- <div class="footer-nav">
           <a href="#">Home</a>
           <a href="#about">About</a>
           <a href="#service">Service</a>
           <a href="#contact">Contact</a>
-        </div>
+        </div> -->
 
         <div class="footer-bottom">
-          <p>&copy; 2023 CV. Java Karya Teknik. All rights reserved.</p>
+          <p>
+            &copy; <span id="year"></span> CV. Java Karya Teknik. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

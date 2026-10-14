@@ -1,18 +1,19 @@
-// let hari = "senin";
+// const body = document.body
 
-// switch(hari) {
-//   case "senin" :
-//     console.log("Ini adalah hari upacara")
-//     break
-//   case "selasa" :
-//     console.log("Ini adalah TOTD")
-//     break
-//   case "sabtu & minggu" :
-//     console.log("Ini hari libur, yeeeeee")
-//     break
-//   default :
-//   console.log("Ini hari biasa")
+// const getData = async () => {
+    
+//     const res = await fetch("https://dummyjson.com/products")
+//     const data = await res.json()
+
+//     console.log(data)
+
+//     const dataMap = data.products.map(function(items) {
+//         return`
+//            <h1 class="text-red-500">${items.title}</h1>
+//            <span>${items.description}</span>
+//         `
+//     })
+//     body.innerHTML = dataMap.join("")
 // }
 
-// let lampuLalu = "hijau";
-
+// getData()
