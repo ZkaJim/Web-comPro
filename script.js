@@ -10,30 +10,42 @@ tombol.addEventListener('click', function(event) {
     serviceSection.scrollIntoView({ behavior: 'smooth' });
 });
 
-const navLinks = document.querySelectorAll('.navbar a');
+// const navLinks = document.querySelectorAll('.navbar a');
 
-navLinks.forEach(function(link) {
-    const tujuan = link.getAttribute('href');
-    if(tujuan !== '#'){
-        const sectionTujuan = document.querySelector(tujuan);
+// navLinks.forEach(function(link) {
+//     const tujuan = link.getAttribute('href');
+//     if(tujuan !== '#'){
+//         const sectionTujuan = document.querySelector(tujuan);
 
-        link.addEventListener('click', function(event){
-            event.preventDefault();
+//         link.addEventListener('click', function(event){
+//             event.preventDefault();
 
-            sectionTujuan.scrollIntoView({  
-                behavior: 'smooth'
-            });
-        });
+//             sectionTujuan.scrollIntoView({  
+//                 behavior: 'smooth'
+//             });
+//         });
+//     }
+
+//     if(tujuan === '#'){
+//         link.addEventListener('click', function(event) {
+//             event.preventDefault();
+
+//             window.scrollTo({
+//                 top: 0,
+//                 behavior: 'smooth'
+//             });
+//         });
+//     }
+// });
+
+const toggleBtn = document.getElementById('theme-toggle')
+
+toggleBtn.addEventListener ('click', () => {
+    document.body.classList.toggle('dark-mode')
+    //ubah teks tombol sesuai kondisi
+    if(document.body.contains('dark-mode')) {
+        toggleBtn.textContent = 'Terang'
+    } else {
+        toggleBtn.textContent = 'Gelap'
     }
-
-    if(tujuan === '#'){
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    }
-});
+})

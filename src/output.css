@@ -1,5 +1,5 @@
 /*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
-/* @layer properties;
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -258,4 +258,4 @@
       --tw-outline-style: solid;
     }
   }
-} */
+}
